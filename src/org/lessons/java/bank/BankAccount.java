@@ -1,5 +1,7 @@
 package org.lessons.java.bank;
 
+import java.util.Random;
+
 public class BankAccount {
     private int accountNumber;
     private String ownerName;
@@ -7,17 +9,23 @@ public class BankAccount {
 
     public BankAccount(String ownerName) {
         this.ownerName = ownerName;
+        this.setBalance();
+        this.setAccountNumber();
     }
 
     public BankAccount() {
+        this.ownerName = "";
+        this.setBalance();
+        this.setAccountNumber();
     }
 
     public int getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
+    private void setAccountNumber() {
+        Random random = new Random();
+        this.accountNumber = random.nextInt(1,1001);
     }
 
     public String getOwnerName() {
@@ -32,7 +40,26 @@ public class BankAccount {
         return balance;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    private void setBalance() {
+        this.balance = 0;
+    }
+
+    public void deposit(double amount){
+        this.balance += amount;
+    }
+
+    public boolean withdraw(double amount){
+
+        if(this.balance >= amount){
+            this.balance -= amount;
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    public void printFormattedBalance(){
+        System.out.println("Ciao "+ this.ownerName);
+        System.out.println("Il saldo del tuo conto n." + this.accountNumber + " ora è di: " + this.balance + " €");
     }
 }

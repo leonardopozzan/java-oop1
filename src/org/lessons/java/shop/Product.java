@@ -8,24 +8,18 @@ public class Product {
     private String name;
     private String description;
     private double basePrice;
-    private double fullPrice;
     private final static double IVA = 0.22;
 
-
     public Product(String name, double price ,String description) {
-        this.setCode();
+        Random random = new Random();
+        this.code = random.nextInt(1000000);
         this.name = name;
         this.basePrice = price;
         this.description = description;
-        this.setFullPrice(this.basePrice);
     }
 
     public Product() {
-        this.setCode();
-        this.name = "";
-        this.basePrice = 0;
-        this.description = "";
-        this.setFullPrice(this.basePrice);
+        this("",0,"");
     }
 
     public static double getIVA(){
@@ -33,11 +27,6 @@ public class Product {
     }
     public int getCode() {
         return code;
-    }
-
-    private void setCode(){
-        Random random = new Random();
-        this.code = random.nextInt(1000000);
     }
 
     public String getName() {
@@ -62,14 +51,11 @@ public class Product {
 
     public void setBasePrice(double basePrice) {
         this.basePrice = basePrice;
-        this.setFullPrice(this.basePrice);
     }
 
     public double getFullPrice() {
+        double fullPrice = this.basePrice + this.basePrice * IVA;
         return fullPrice;
-    }
-    private void setFullPrice(double basePrice){
-        this.fullPrice = basePrice + basePrice * IVA;
     }
     public String getFullName(){
         return this.code + this.name;

@@ -9,23 +9,17 @@ public class BankAccount {
 
     public BankAccount(String ownerName) {
         this.ownerName = ownerName;
-        this.setBalance();
-        this.setAccountNumber();
+        Random random = new Random();
+        this.accountNumber = random.nextInt(1,1001);
+        this.balance = 0;
     }
 
     public BankAccount() {
-        this.ownerName = "";
-        this.setBalance();
-        this.setAccountNumber();
+        this("");
     }
 
     public int getAccountNumber() {
         return accountNumber;
-    }
-
-    private void setAccountNumber() {
-        Random random = new Random();
-        this.accountNumber = random.nextInt(1,1001);
     }
 
     public String getOwnerName() {
@@ -40,9 +34,6 @@ public class BankAccount {
         return balance;
     }
 
-    private void setBalance() {
-        this.balance = 0;
-    }
 
     public void deposit(double amount){
         this.balance += amount;

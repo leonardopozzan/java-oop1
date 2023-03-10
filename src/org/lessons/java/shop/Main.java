@@ -1,3 +1,5 @@
+package org.lessons.java.shop;
+
 import org.lessons.java.shop.Product;
 
 public class Main {

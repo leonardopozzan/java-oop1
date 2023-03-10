@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="016f783d-2228-4ef4-bd23-b8076e5be1c9" name="Changes" comment="scaffolding">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="016f783d-2228-4ef4-bd23-b8076e5be1c9" name="Changes" comment="es1">
+      <change afterPath="$PROJECT_DIR$/src/org/lessons/java/bank/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/lessons/java/bank/BankAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="org.lessons.java.shop.Main" />
       <module name="java-oop1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,11 +82,19 @@
       <option name="project" value="LOCAL" />
       <updated>1678453477161</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="es1">
+      <created>1678457612906</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678457612906</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="scaffolding" />
-    <option name="LAST_COMMIT_MESSAGE" value="scaffolding" />
+    <MESSAGE value="es1" />
+    <option name="LAST_COMMIT_MESSAGE" value="es1" />
   </component>
 </project>

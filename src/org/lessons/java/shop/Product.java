@@ -13,8 +13,7 @@ public class Product {
 
 
     public Product(String name, double price ,String description) {
-        Random random = new Random();
-        this.code = random.nextInt(Integer.MAX_VALUE);
+        this.setCode();
         this.name = name;
         this.basePrice = price;
         this.description = description;
@@ -22,8 +21,7 @@ public class Product {
     }
 
     public Product() {
-        Random random = new Random();
-        this.code = random.nextInt(1000000);
+        this.setCode();
         this.name = "";
         this.basePrice = 0;
         this.description = "";
@@ -35,6 +33,11 @@ public class Product {
     }
     public int getCode() {
         return code;
+    }
+
+    private void setCode(){
+        Random random = new Random();
+        this.code = random.nextInt(1000000);
     }
 
     public String getName() {
